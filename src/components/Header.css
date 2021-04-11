@@ -13,7 +13,7 @@
 }
 .NewListButton {
   display: flex;
-  width: calc(100% - 900px);
+  width: calc(100% - 700px);
   justify-content: space-evenly;
 }
 .addNewList > button {
