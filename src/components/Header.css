@@ -1,16 +1,22 @@
 .Header {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 2%;
+  padding-top: 5px;
+  height: 40px;
 }
 
 .Title {
   font-size: 25px;
+  width: 300px;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.NewListButton > button {
+.NewListButton {
+  display: flex;
+  width: calc(100% - 900px);
+  justify-content: space-evenly;
+}
+.addNewList > button {
   border-radius: 45px;
   font-size: 15px;
   cursor: pointer;
@@ -23,6 +29,21 @@
   border: 2px solid #4d79ff;
 }
 
-.NewListButton :hover {
+.deleteLocalStorage > button {
+  border-radius: 45px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  color: #d1d1e0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  outline: none;
+  border: 2px solid #4d79ff;
+}
+.deleteLocalStorage :hover {
+  border: 2px solid #1aff1a;
+}
+.addNewList :hover {
   border: 2px solid #1aff1a;
 }

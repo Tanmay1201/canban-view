@@ -1,7 +1,7 @@
 .List {
   border: 2px solid #1a75ff;
   background: #ffffff;
-  height: auto;
+  height: 90%;
   min-width: 250px;
   margin-left: 10px;
   margin-right: 10px;
@@ -10,8 +10,10 @@
 
 .ListHeader {
   display: flex;
-  padding-top: 2%;
+  height: 40px;
   justify-content: space-evenly;
+  border: none;
+  border-bottom: 2px solid #1a75ff;
 }
 .listname {
   margin-left: 1%;
@@ -36,10 +38,10 @@
   border-radius: 45px;
   font-size: 12px;
   cursor: pointer;
+  background: white;
   border: none;
   padding: 5px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f2f2;
   outline: none;
   border: 2px solid #4d79ff;
 }
@@ -49,4 +51,8 @@
 
 .individualCard {
   border: 1px soild red;
+}
+.cardsList {
+  height: calc(100% - 60px);
+  overflow-y: auto;
 }

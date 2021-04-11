@@ -53,11 +53,11 @@ const IndividualCardDetails = ({ formNum, isOpen, close, onAdd }) => {
         return (
             <div className="AddCard">
                     <div className={classNameTitle}>
-                        <input type="text" value={cardDetails.name} onChange={handleNameChange} />
+                        <input type="text" placeholder="Enter Title"value={cardDetails.name} onChange={handleNameChange} />
                     </div>
                     <hr />
                     <div className={classNameDescription}>
-                        <textarea  value={cardDetails.description} onChange={handleDescriptionChange} />
+                        <textarea  placeholder="Enter Description"value={cardDetails.description} onChange={handleDescriptionChange} />
                     </div>
                     <div>
                 <div className="buttons">

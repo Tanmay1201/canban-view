@@ -31,7 +31,6 @@ const IndividualList = props => {
                     </button>
                 </div>
             </div>
-            <hr />
             <div className="cardsList" draggable="true" onDragOver={props.onDragOver} onDrop={props.onDrop}>
                 {cards}
                 <div>

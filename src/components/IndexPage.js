@@ -57,9 +57,7 @@ const IndexPage = () => {
     const isClose = () => {
         setNamePopup(false)
     }
-    const deleteItems = () => {
-  localStorage.clear();
-}
+    
     const setListName = (name) => {
         if (listCount === 0)
         {
@@ -110,7 +108,6 @@ const IndexPage = () => {
         console.log(listNumber)
         parsedLists[listNumber].cards.push(newCard)
 
-        //sync state and localStorage
         setAllLists(parsedLists);
         localStorage.setItem('AllLists', JSON.stringify(parsedLists))
     }
@@ -119,7 +116,7 @@ const IndexPage = () => {
             <IndividualList {...list} 
                 onDragStart={(e) => onDragStart(e, `${list.listCount}`)}
                 onDragOver={(e) => onDragOver(e)} 
-                onDrop={(e, listNum) => { onDrop(e, `${list.listCount}`) }}
+                onDrop={(e) => { onDrop(e, `${list.listCount}`) }}
                 onAdd={(data, listNumber) => addNewCard(data, listNumber)}
             />
         </li>
@@ -127,12 +124,13 @@ const IndexPage = () => {
     console.log(divs)
     return (
         <>
+            
             <Header increaseCounter={increaseCounter} />
             <NamePopup isOpen={namePopup} isClose={isClose} setListName={ setListName}/>
             <div className="Lists">
                 {divs}
             </div>
-            <button onClick={deleteItems}>Delete items</button>
+            
 
         </>
     )
