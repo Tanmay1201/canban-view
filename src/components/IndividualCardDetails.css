@@ -1,0 +1,64 @@
+.AddCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.title > input {
+  border: none;
+  outline: none;
+  padding: 3px;
+  border-radius: 45px;
+  border: 1px solid #4d79ff;
+}
+.description > textarea {
+  width: 200px;
+  height: 60px;
+  border: 1px solid #4d79ff;
+  padding: 5px;
+  font-family: Tahoma, sans-serif;
+  background-position: bottom right;
+  outline: none;
+  background-repeat: no-repeat;
+}
+
+.buttons {
+  display: flex;
+
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+.buttons > button {
+  border: 1px solid #4d79ff;
+  padding: 4px;
+  outline: none;
+  background: white;
+  cursor: pointer;
+  color: #000000;
+  border-radius: 45px;
+}
+
+.buttons :hover {
+  border: 1px solid #1aff1a;
+}
+
+.errorTitle > input {
+  border: none;
+  outline: none;
+  padding: 3px;
+  border-radius: 45px;
+  border: 1px solid red;
+}
+
+.errorDecription > textarea {
+  width: 200px;
+  height: 60px;
+  border: 1px solid red;
+  padding: 5px;
+  font-family: Tahoma, sans-serif;
+  background-position: bottom right;
+  outline: none;
+  background-repeat: no-repeat;
+}

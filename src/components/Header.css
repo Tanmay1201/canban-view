@@ -1,0 +1,28 @@
+.Header {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2%;
+}
+
+.Title {
+  font-size: 25px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.NewListButton > button {
+  border-radius: 45px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  color: #d1d1e0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  outline: none;
+  border: 2px solid #4d79ff;
+}
+
+.NewListButton :hover {
+  border: 2px solid #1aff1a;
+}

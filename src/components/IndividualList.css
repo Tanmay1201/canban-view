@@ -1,0 +1,52 @@
+.List {
+  border: 2px solid #1a75ff;
+  background: #ffffff;
+  height: auto;
+  min-width: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.ListHeader {
+  display: flex;
+  padding-top: 2%;
+  justify-content: space-evenly;
+}
+.listname {
+  margin-left: 1%;
+}
+
+.addboxesbutton {
+  margin-right: 1%;
+}
+
+.listname {
+  margin-top: 3%;
+}
+.addboxesbutton {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.listname > span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.addboxesbutton > button {
+  border-radius: 45px;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  outline: none;
+  border: 2px solid #4d79ff;
+}
+.addboxesbutton :hover {
+  border: 2px solid #1aff1a;
+}
+
+.individualCard {
+  border: 1px soild red;
+}
